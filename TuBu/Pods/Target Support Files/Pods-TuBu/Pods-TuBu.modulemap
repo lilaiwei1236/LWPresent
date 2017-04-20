@@ -1,0 +1,6 @@
+framework module Pods_TuBu {
+  umbrella header "Pods-TuBu-umbrella.h"
+
+  export *
+  module * { export * }
+}
