@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "NSData+SDDataCache.h"
 #import "TAAbstractDotView.h"
 #import "TAAnimatedDotView.h"
 #import "TADotView.h"

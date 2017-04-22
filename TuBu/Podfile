@@ -9,6 +9,11 @@ source 'https:www.github.com/CocoaPods/Specs.git'
 platform:ios,'8.0'
 target 'TuBu' do
 use_frameworks!
-pod 'SDCycleScrollView'
 
+pod 'SDCycleScrollView'
+pod 'Alamofire', '~> 4.4.0'
+pod 'SnapKit', '~> 3.2.0'
+#pod 'YYKit'
+pod 'SDWebImage'
+pod 'SwiftyJSON', '~> 3.1.4'
 end

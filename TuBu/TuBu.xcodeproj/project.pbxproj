@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B948B1D31355EA14DE022F7D /* Pods_TuBu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 048239D4B9C6B297385FAADC /* Pods_TuBu.framework */; };
-		CBB691D01EA8E28F001A97AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB691CF1EA8E28F001A97AA /* AppDelegate.swift */; };
-		CBB691D21EA8E28F001A97AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB691D11EA8E28F001A97AA /* ViewController.swift */; };
+		CBA62B161EAB42F400FB36FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA62B101EAB42F400FB36FA /* AppDelegate.swift */; };
 		CBB691D51EA8E28F001A97AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB691D31EA8E28F001A97AA /* Main.storyboard */; };
 		CBB691D71EA8E28F001A97AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB691D61EA8E28F001A97AA /* Assets.xcassets */; };
 		CBB691DA1EA8E28F001A97AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB691D81EA8E28F001A97AA /* LaunchScreen.storyboard */; };
@@ -20,14 +19,14 @@
 		048239D4B9C6B297385FAADC /* Pods_TuBu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuBu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F6173C8AB86B1B1614C37B /* Pods-TuBu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuBu.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuBu/Pods-TuBu.release.xcconfig"; sourceTree = "<group>"; };
 		9E467DA45B6C34FFCA846819 /* Pods-TuBu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuBu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuBu/Pods-TuBu.debug.xcconfig"; sourceTree = "<group>"; };
+		CBA62B101EAB42F400FB36FA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CBA62B171EAB443600FB36FA /* TuBuBridge.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TuBuBridge.pch; sourceTree = "<group>"; };
 		CBB691CC1EA8E28F001A97AA /* TuBu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuBu.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBB691CF1EA8E28F001A97AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CBB691D11EA8E28F001A97AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CBB691D41EA8E28F001A97AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBB691D61EA8E28F001A97AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBB691D91EA8E28F001A97AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBB691DB1EA8E28F001A97AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBB691E11EA8E2CF001A97AA /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		CBB691E11EA8E2CF001A97AA /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +48,239 @@
 				72F6173C8AB86B1B1614C37B /* Pods-TuBu.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		CBA62AF81EAB42F400FB36FA /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				CBA62AF91EAB42F400FB36FA /* Base */,
+				CBA62AFE1EAB42F400FB36FA /* Helper */,
+				CBA62B031EAB42F400FB36FA /* Launch */,
+				CBA62B081EAB42F400FB36FA /* Lib */,
+				CBA62B091EAB42F400FB36FA /* Live */,
+				CBA62B0E1EAB42F400FB36FA /* Network */,
+				CBA62B0F1EAB42F400FB36FA /* Other */,
+				CBA62B111EAB42F400FB36FA /* Show */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		CBA62AF91EAB42F400FB36FA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CBA62AFA1EAB42F400FB36FA /* Controller */,
+				CBA62AFB1EAB42F400FB36FA /* Handle */,
+				CBA62AFC1EAB42F400FB36FA /* Model */,
+				CBA62AFD1EAB42F400FB36FA /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CBA62AFA1EAB42F400FB36FA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CBA62AFB1EAB42F400FB36FA /* Handle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handle;
+			sourceTree = "<group>";
+		};
+		CBA62AFC1EAB42F400FB36FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBA62AFD1EAB42F400FB36FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBA62AFE1EAB42F400FB36FA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CBA62AFF1EAB42F400FB36FA /* Controller */,
+				CBA62B001EAB42F400FB36FA /* Handle */,
+				CBA62B011EAB42F400FB36FA /* Model */,
+				CBA62B021EAB42F400FB36FA /* View */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		CBA62AFF1EAB42F400FB36FA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CBA62B001EAB42F400FB36FA /* Handle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handle;
+			sourceTree = "<group>";
+		};
+		CBA62B011EAB42F400FB36FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBA62B021EAB42F400FB36FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBA62B031EAB42F400FB36FA /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				CBA62B041EAB42F400FB36FA /* Controller */,
+				CBA62B051EAB42F400FB36FA /* Handle */,
+				CBA62B061EAB42F400FB36FA /* Model */,
+				CBA62B071EAB42F400FB36FA /* View */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		CBA62B041EAB42F400FB36FA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CBA62B051EAB42F400FB36FA /* Handle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handle;
+			sourceTree = "<group>";
+		};
+		CBA62B061EAB42F400FB36FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBA62B071EAB42F400FB36FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBA62B081EAB42F400FB36FA /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		CBA62B091EAB42F400FB36FA /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				CBA62B0A1EAB42F400FB36FA /* Controller */,
+				CBA62B0B1EAB42F400FB36FA /* Handle */,
+				CBA62B0C1EAB42F400FB36FA /* Model */,
+				CBA62B0D1EAB42F400FB36FA /* View */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		CBA62B0A1EAB42F400FB36FA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CBA62B0B1EAB42F400FB36FA /* Handle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handle;
+			sourceTree = "<group>";
+		};
+		CBA62B0C1EAB42F400FB36FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBA62B0D1EAB42F400FB36FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBA62B0E1EAB42F400FB36FA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CBA62B0F1EAB42F400FB36FA /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				CBA62B101EAB42F400FB36FA /* AppDelegate.swift */,
+				CBA62B171EAB443600FB36FA /* TuBuBridge.pch */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		CBA62B111EAB42F400FB36FA /* Show */ = {
+			isa = PBXGroup;
+			children = (
+				CBA62B121EAB42F400FB36FA /* Controller */,
+				CBA62B131EAB42F400FB36FA /* Handle */,
+				CBA62B141EAB42F400FB36FA /* Model */,
+				CBA62B151EAB42F400FB36FA /* View */,
+			);
+			path = Show;
+			sourceTree = "<group>";
+		};
+		CBA62B121EAB42F400FB36FA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CBA62B131EAB42F400FB36FA /* Handle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handle;
+			sourceTree = "<group>";
+		};
+		CBA62B141EAB42F400FB36FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBA62B151EAB42F400FB36FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CBB691C31EA8E28F001A97AA = {
@@ -73,8 +305,7 @@
 		CBB691CE1EA8E28F001A97AA /* TuBu */ = {
 			isa = PBXGroup;
 			children = (
-				CBB691CF1EA8E28F001A97AA /* AppDelegate.swift */,
-				CBB691D11EA8E28F001A97AA /* ViewController.swift */,
+				CBA62AF81EAB42F400FB36FA /* Class */,
 				CBB691D31EA8E28F001A97AA /* Main.storyboard */,
 				CBB691D61EA8E28F001A97AA /* Assets.xcassets */,
 				CBB691D81EA8E28F001A97AA /* LaunchScreen.storyboard */,
@@ -216,8 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBB691D21EA8E28F001A97AA /* ViewController.swift in Sources */,
-				CBB691D01EA8E28F001A97AA /* AppDelegate.swift in Sources */,
+				CBA62B161EAB42F400FB36FA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +576,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lilaiwei.TuBu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/lilaiwei/Desktop/GitClone/LWPresent/TuBu/TuBu/Class/Other/TuBuBridge.pch;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -360,6 +591,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lilaiwei.TuBu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/lilaiwei/Desktop/GitClone/LWPresent/TuBu/TuBu/Class/Other/TuBuBridge.pch;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -383,6 +615,7 @@
 				CBB691E01EA8E28F001A97AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
