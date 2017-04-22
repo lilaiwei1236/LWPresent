@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B948B1D31355EA14DE022F7D /* Pods_TuBu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 048239D4B9C6B297385FAADC /* Pods_TuBu.framework */; };
 		CBA62B161EAB42F400FB36FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA62B101EAB42F400FB36FA /* AppDelegate.swift */; };
+		CBA62B191EAB559D00FB36FA /* MacroDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA62B181EAB559D00FB36FA /* MacroDefine.swift */; };
 		CBB691D51EA8E28F001A97AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB691D31EA8E28F001A97AA /* Main.storyboard */; };
 		CBB691D71EA8E28F001A97AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB691D61EA8E28F001A97AA /* Assets.xcassets */; };
 		CBB691DA1EA8E28F001A97AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB691D81EA8E28F001A97AA /* LaunchScreen.storyboard */; };
@@ -21,6 +22,7 @@
 		9E467DA45B6C34FFCA846819 /* Pods-TuBu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuBu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuBu/Pods-TuBu.debug.xcconfig"; sourceTree = "<group>"; };
 		CBA62B101EAB42F400FB36FA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBA62B171EAB443600FB36FA /* TuBuBridge.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TuBuBridge.pch; sourceTree = "<group>"; };
+		CBA62B181EAB559D00FB36FA /* MacroDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacroDefine.swift; sourceTree = "<group>"; };
 		CBB691CC1EA8E28F001A97AA /* TuBu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuBu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB691D41EA8E28F001A97AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBB691D61EA8E28F001A97AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 			children = (
 				CBA62B101EAB42F400FB36FA /* AppDelegate.swift */,
 				CBA62B171EAB443600FB36FA /* TuBuBridge.pch */,
+				CBA62B181EAB559D00FB36FA /* MacroDefine.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBA62B161EAB42F400FB36FA /* AppDelegate.swift in Sources */,
+				CBA62B191EAB559D00FB36FA /* MacroDefine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,8 +575,10 @@
 			baseConfigurationReference = 9E467DA45B6C34FFCA846819 /* Pods-TuBu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = NWH3Q65J8Y;
 				INFOPLIST_FILE = TuBu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lilaiwei.TuBu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -586,8 +592,10 @@
 			baseConfigurationReference = 72F6173C8AB86B1B1614C37B /* Pods-TuBu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = NWH3Q65J8Y;
 				INFOPLIST_FILE = TuBu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lilaiwei.TuBu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
