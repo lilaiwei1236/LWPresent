@@ -10,6 +10,10 @@
 		B948B1D31355EA14DE022F7D /* Pods_TuBu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 048239D4B9C6B297385FAADC /* Pods_TuBu.framework */; };
 		CBA62B161EAB42F400FB36FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA62B101EAB42F400FB36FA /* AppDelegate.swift */; };
 		CBA62B191EAB559D00FB36FA /* MacroDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA62B181EAB559D00FB36FA /* MacroDefine.swift */; };
+		CBA62B1B1EAB574400FB36FA /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA62B1A1EAB574400FB36FA /* TabbarViewController.swift */; };
+		CBA62B1D1EAB576600FB36FA /* LWTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA62B1C1EAB576600FB36FA /* LWTabbar.swift */; };
+		CBA62B1F1EAB5E7F00FB36FA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA62B1E1EAB5E7F00FB36FA /* BaseViewController.swift */; };
+		CBA62B211EAB7C5A00FB36FA /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA62B201EAB7C5A00FB36FA /* LiveViewController.swift */; };
 		CBB691D51EA8E28F001A97AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB691D31EA8E28F001A97AA /* Main.storyboard */; };
 		CBB691D71EA8E28F001A97AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB691D61EA8E28F001A97AA /* Assets.xcassets */; };
 		CBB691DA1EA8E28F001A97AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB691D81EA8E28F001A97AA /* LaunchScreen.storyboard */; };
@@ -23,6 +27,10 @@
 		CBA62B101EAB42F400FB36FA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBA62B171EAB443600FB36FA /* TuBuBridge.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TuBuBridge.pch; sourceTree = "<group>"; };
 		CBA62B181EAB559D00FB36FA /* MacroDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacroDefine.swift; sourceTree = "<group>"; };
+		CBA62B1A1EAB574400FB36FA /* TabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		CBA62B1C1EAB576600FB36FA /* LWTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWTabbar.swift; sourceTree = "<group>"; };
+		CBA62B1E1EAB5E7F00FB36FA /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CBA62B201EAB7C5A00FB36FA /* LiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 		CBB691CC1EA8E28F001A97AA /* TuBu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuBu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB691D41EA8E28F001A97AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBB691D61EA8E28F001A97AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,6 +89,8 @@
 		CBA62AFA1EAB42F400FB36FA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CBA62B1A1EAB574400FB36FA /* TabbarViewController.swift */,
+				CBA62B1E1EAB5E7F00FB36FA /* BaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -102,6 +112,7 @@
 		CBA62AFD1EAB42F400FB36FA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CBA62B1C1EAB576600FB36FA /* LWTabbar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -205,6 +216,7 @@
 		CBA62B0A1EAB42F400FB36FA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CBA62B201EAB7C5A00FB36FA /* LiveViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -450,8 +462,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBA62B1F1EAB5E7F00FB36FA /* BaseViewController.swift in Sources */,
+				CBA62B1D1EAB576600FB36FA /* LWTabbar.swift in Sources */,
 				CBA62B161EAB42F400FB36FA /* AppDelegate.swift in Sources */,
 				CBA62B191EAB559D00FB36FA /* MacroDefine.swift in Sources */,
+				CBA62B211EAB7C5A00FB36FA /* LiveViewController.swift in Sources */,
+				CBA62B1B1EAB574400FB36FA /* TabbarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
