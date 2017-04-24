@@ -1,28 +1,21 @@
 //
-//  TabbarViewController.swift
+//  NavigationCtr.swift
 //  TuBu
 //
-//  Created by 李来伟 on 2017/4/22.
+//  Created by Ez_QMS on 17/4/24.
 //  Copyright © 2017年 李来伟. All rights reserved.
 //
 
 import UIKit
 
-class TabbarViewController: UITabBarController {
+class NavigationCtr: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        prepareVc()
         // Do any additional setup after loading the view.
     }
 
-    
-    fileprivate func prepareVc()
-    {
-        
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

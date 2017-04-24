@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4ACE221E1EAD8C2400E686DF /* UIViewExtenS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACE221D1EAD8C2400E686DF /* UIViewExtenS.swift */; };
+		4ACE22201EAD8CA600E686DF /* ColorExtenS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACE221F1EAD8CA600E686DF /* ColorExtenS.swift */; };
+		4ACE22221EAD8CDA00E686DF /* ButtonExtens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACE22211EAD8CDA00E686DF /* ButtonExtens.swift */; };
+		4ACE22241EAD8DA300E686DF /* NavigationCtr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACE22231EAD8DA200E686DF /* NavigationCtr.swift */; };
 		B948B1D31355EA14DE022F7D /* Pods_TuBu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 048239D4B9C6B297385FAADC /* Pods_TuBu.framework */; };
 		CBA62B161EAB42F400FB36FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA62B101EAB42F400FB36FA /* AppDelegate.swift */; };
 		CBA62B191EAB559D00FB36FA /* MacroDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA62B181EAB559D00FB36FA /* MacroDefine.swift */; };
@@ -22,6 +26,10 @@
 
 /* Begin PBXFileReference section */
 		048239D4B9C6B297385FAADC /* Pods_TuBu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuBu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ACE221D1EAD8C2400E686DF /* UIViewExtenS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtenS.swift; sourceTree = SOURCE_ROOT; };
+		4ACE221F1EAD8CA600E686DF /* ColorExtenS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtenS.swift; sourceTree = SOURCE_ROOT; };
+		4ACE22211EAD8CDA00E686DF /* ButtonExtens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonExtens.swift; sourceTree = SOURCE_ROOT; };
+		4ACE22231EAD8DA200E686DF /* NavigationCtr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationCtr.swift; sourceTree = "<group>"; };
 		72F6173C8AB86B1B1614C37B /* Pods-TuBu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuBu.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuBu/Pods-TuBu.release.xcconfig"; sourceTree = "<group>"; };
 		9E467DA45B6C34FFCA846819 /* Pods-TuBu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuBu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuBu/Pods-TuBu.debug.xcconfig"; sourceTree = "<group>"; };
 		CBA62B101EAB42F400FB36FA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +59,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4ACE221C1EAD8C0700E686DF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				4ACE221D1EAD8C2400E686DF /* UIViewExtenS.swift */,
+				4ACE221F1EAD8CA600E686DF /* ColorExtenS.swift */,
+				4ACE22211EAD8CDA00E686DF /* ButtonExtens.swift */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
 		860469B2484698B8BF7B44F0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				CBA62B1A1EAB574400FB36FA /* TabbarViewController.swift */,
+				4ACE22231EAD8DA200E686DF /* NavigationCtr.swift */,
 				CBA62B1E1EAB5E7F00FB36FA /* BaseViewController.swift */,
 			);
 			path = Controller;
@@ -120,6 +139,7 @@
 		CBA62AFE1EAB42F400FB36FA /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				4ACE221C1EAD8C0700E686DF /* Category */,
 				CBA62AFF1EAB42F400FB36FA /* Controller */,
 				CBA62B001EAB42F400FB36FA /* Handle */,
 				CBA62B011EAB42F400FB36FA /* Model */,
@@ -464,10 +484,14 @@
 			files = (
 				CBA62B1F1EAB5E7F00FB36FA /* BaseViewController.swift in Sources */,
 				CBA62B1D1EAB576600FB36FA /* LWTabbar.swift in Sources */,
+				4ACE22201EAD8CA600E686DF /* ColorExtenS.swift in Sources */,
 				CBA62B161EAB42F400FB36FA /* AppDelegate.swift in Sources */,
 				CBA62B191EAB559D00FB36FA /* MacroDefine.swift in Sources */,
+				4ACE22221EAD8CDA00E686DF /* ButtonExtens.swift in Sources */,
 				CBA62B211EAB7C5A00FB36FA /* LiveViewController.swift in Sources */,
+				4ACE22241EAD8DA300E686DF /* NavigationCtr.swift in Sources */,
 				CBA62B1B1EAB574400FB36FA /* TabbarViewController.swift in Sources */,
+				4ACE221E1EAD8C2400E686DF /* UIViewExtenS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
